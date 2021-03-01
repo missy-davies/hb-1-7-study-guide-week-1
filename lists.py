@@ -322,7 +322,6 @@ def reverse_list_in_place(items):
         ['I', 'love', 'cookies']
     """
 
-    # not sure why this doesn't work 
     half = len(items) // 2
 
     for i in range(half):
