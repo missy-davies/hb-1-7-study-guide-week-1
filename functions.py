@@ -113,6 +113,12 @@ def print_sign(num):
 #    returns a boolean (True or False), depending on whether the number is
 #    evenly divisible by 3.
 
+def is_divisible_by_three(num):
+    if num % 3 == 0:
+        return True
+    else:
+        return False 
+        
 
 # 7. Write a function called 'num_spaces' that takes a sentence as one string
 #    and returns the number of spaces.
