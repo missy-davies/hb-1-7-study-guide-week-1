@@ -170,7 +170,11 @@ def sum_numbers(numbers):
         0
     """
 
-    return None
+    sum_nums = 0
+    for number in numbers:
+        sum_nums += number
+
+    return sum_nums
 
 
 def mult_numbers(numbers):
