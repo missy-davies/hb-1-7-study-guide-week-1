@@ -88,8 +88,12 @@ def say_hi(name):
 def print_product(num1, num2):
     print(num1 * num2)
 
+
 # 4. Write a function called 'repeat_string' that takes a string and an integer
 #    and prints the string that many times
+
+def repeat_string(string, num):
+    print(string * num)
 
 
 # 5. Write a function called 'print_sign' that takes an integer and prints
