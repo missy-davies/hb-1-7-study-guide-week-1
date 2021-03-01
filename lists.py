@@ -295,7 +295,11 @@ def reverse_list(items):
         ['apple', 'berry', 'cherry']
     """
 
-    return []
+    reversed_list = [] # ['apple', 'berry', 'cherry']
+    for item in items:
+        reversed_list[0:0] = [item]
+
+    return reversed_list
 
 
 def reverse_list_in_place(items):
@@ -318,7 +322,11 @@ def reverse_list_in_place(items):
         ['I', 'love', 'cookies']
     """
 
-    return []
+    half = len(items) // 2
+    for i in range(half):
+        items[i] == items[-1 + i]
+
+    return items
 
 
 def duplicates(items):
