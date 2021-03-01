@@ -220,7 +220,11 @@ def join_strings(words):
         ''
     """
 
-    return "Not the right thing"
+    string_add = ""
+    for word in words:
+        string_add += word
+
+    return string_add
 
 
 def average(numbers):
