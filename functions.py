@@ -78,7 +78,8 @@ def hello_world():
 # 2. Write a function called 'say_hi' that takes a name as a string and
 #    prints "Hi" followed by the name.
 
-
+def say_hi(name):
+    print(f"Hi {name}")
 
 
 # 3. Write a function called 'print_product' that takes two integers and
