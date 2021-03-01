@@ -85,7 +85,12 @@ def smallest_int(numbers):
         True
     """
 
-    return 100
+    sorted_numbers = sorted(numbers)
+    
+    if len(sorted_numbers) == 0:
+        return None
+    else:
+        return sorted_numbers[0]
 
 
 def largest_int(numbers):
