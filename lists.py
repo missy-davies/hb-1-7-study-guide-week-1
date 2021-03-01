@@ -323,16 +323,15 @@ def reverse_list_in_place(items):
     """
 
     # not sure why this doesn't work 
-    # half = len(items) // 2
+    half = len(items) // 2
 
-    # for i in range(half):
-    #     beginning_num = items[i]
-    #     ending_num = items[(i + 1) * -1]
+    for i in range(half):
+        beginning_num = items[i]
+        ending_num = items[(i + 1) * -1]
 
-    #     items[i] = ending_num
-    #     items[(i + 1) * -1] = beginning_num
+        items[i] = ending_num
+        items[(i + 1) * -1] = beginning_num
 
-    # return items 
 
 def duplicates(items):
     """Return list of words from input list which were duplicates.
