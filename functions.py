@@ -145,6 +145,23 @@ def total_meal_price(meal_price, tip_percent=0.15):
 #    unpack what is returned into two variables --- sign and parity (whether
 #    it's even or odd). Print sign and parity.
 
+def sign_and_parity(num):
+    num_info = []
+
+    if num > 0:
+        num_info.append("Positive")
+    elif num < 0:
+        num_info.append("Negative")
+
+    if num % 2 == 0:
+        num_info.append("Even")
+    elif num % 2 != 0:
+        num_info.append("Odd")
+
+    return num_info
+
+info_42 = sign_and_parity(42)
+sign, parity = info_42
 
 ###############################################################################
 
@@ -154,6 +171,10 @@ def total_meal_price(meal_price, tip_percent=0.15):
 #    parameters, making it so the job title defaults to "Engineer" if a job
 #    title is not passed in. Return the person's title and name in one string.
 
+def full_title(name, job_title="Engineer"):
+    return f"{job_title} {name}"
+
+
 # 2. Write a function called write_letter that, given a recipient name & job
 #    title and a sender name, prints the following letter:
 #
@@ -162,6 +183,9 @@ def total_meal_price(meal_price, tip_percent=0.15):
 #
 #    Use the function from #1 to construct the full title for the letter's
 #    greeting.
+
+def write_letter(recipient, job_title, sender_name):
+    print(f"Dear {job_title} {recipient}, I think you are amazing! Sincerely, {sender_name}")
 
 
 ###############################################################################
