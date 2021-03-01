@@ -322,12 +322,17 @@ def reverse_list_in_place(items):
         ['I', 'love', 'cookies']
     """
 
-    half = len(items) // 2
-    for i in range(half):
-        items[i] == items[-1 + i]
+    # not sure why this doesn't work 
+    # half = len(items) // 2
 
-    return items
+    # for i in range(half):
+    #     beginning_num = items[i]
+    #     ending_num = items[(i + 1) * -1]
 
+    #     items[i] = ending_num
+    #     items[(i + 1) * -1] = beginning_num
+
+    # return items 
 
 def duplicates(items):
     """Return list of words from input list which were duplicates.
@@ -351,8 +356,16 @@ def duplicates(items):
         >>> orig
         ['apple', 'apple', 'berry']
     """
+    duplicates = []
+    dictionaries = {}
+    for item in items:
+        dictionaries[item] = items.count(item)
+    
+    for dictionary in dictionaries:
+        if dictionaries[dictionary] > 1:
+            duplicates.append(dictionary)
 
-    return []
+    return sorted(duplicates)
 
 
 def find_letter_indices(words, letter):
